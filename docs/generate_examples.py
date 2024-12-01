@@ -14,8 +14,7 @@ sys.path.insert(0, PARENT_DIR)
 
 from json_schema_for_humans.const import FileLikeType
 from json_schema_for_humans.generate import generate_from_filename
-from json_schema_for_humans.generation_configuration import \
-    GenerationConfiguration
+from json_schema_for_humans.generation_configuration import GenerationConfiguration
 
 EXAMPLES_DIR = os.path.join(CURRENT_DIR, "examples")
 JSON_EXAMPLES_DIR = os.path.join(EXAMPLES_DIR, "cases")
@@ -146,6 +145,21 @@ CONFIGURATIONS: List[ExampleConfiguration] = [
         "md_example_template": MD_EXAMPLE_MD_TEMPLATE,
     },
     {
+        "title": "Markdown with trailing badges template",
+        "dir_name": "examples_md_with_trailing_badges",
+        "config": GenerationConfiguration(
+            template_name="md",
+            deprecated_from_description=True,
+            template_md_options={
+                "badge_as_image": True,
+                "heading_leading_badges": [],
+                "heading_trailing_badges": ["Required", "Type"],
+            },
+            footer_show_time=False,
+        ),
+        "md_example_template": MD_EXAMPLE_MD_TEMPLATE,
+    },
+    {
         "title": "Nested Markdown without badges template",
         "dir_name": "examples_md_nested_default",
         "config": GenerationConfiguration(
@@ -163,6 +177,22 @@ CONFIGURATIONS: List[ExampleConfiguration] = [
             template_name="md_nested",
             deprecated_from_description=True,
             template_md_options={"badge_as_image": True},
+            footer_show_time=False,
+        ),
+        "md_example_template": MD_EXAMPLE_MD_TEMPLATE,
+    },
+    {
+        "title": "Nested Markdown with trailing badges and HTML badges",
+        "dir_name": "examples_md_nested_with_trailing_html_badges",
+        "config": GenerationConfiguration(
+            template_name="md_nested",
+            deprecated_from_description=True,
+            template_md_options={
+                "badge_as_image": True,
+                "allow_html": True,
+                "heading_leading_badges": [],
+                "heading_trailing_badges": ["Required", "Type"],
+            },
             footer_show_time=False,
         ),
         "md_example_template": MD_EXAMPLE_MD_TEMPLATE,

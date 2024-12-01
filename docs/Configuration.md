@@ -61,6 +61,14 @@ These parameters can be provided with a json or yaml file, through the CLI, or t
 
 
 <details>
+<summary>Markdown with trailing badges template - Click here to expand the rendered result...</summary>
+<a href="https://github.com/coveooss/json-schema-for-humans/blob/main/docs/examples/examples_md_with_trailing_badges/Configuration.md" target="_blank">Open it in github</a>
+
+[examples/examples_md_with_trailing_badges/Configuration.md](examples/examples_md_with_trailing_badges/Configuration.md ':include')
+</details>
+
+
+<details>
 <summary>Nested Markdown without badges template - Click here to expand the rendered result...</summary>
 <a href="https://github.com/coveooss/json-schema-for-humans/blob/main/docs/examples/examples_md_nested_default/Configuration.md" target="_blank">Open it in github</a>
 
@@ -73,6 +81,14 @@ These parameters can be provided with a json or yaml file, through the CLI, or t
 <a href="https://github.com/coveooss/json-schema-for-humans/blob/main/docs/examples/examples_md_nested_with_badges/Configuration.md" target="_blank">Open it in github</a>
 
 [examples/examples_md_nested_with_badges/Configuration.md](examples/examples_md_nested_with_badges/Configuration.md ':include')
+</details>
+
+
+<details>
+<summary>Nested Markdown with trailing badges and HTML badges - Click here to expand the rendered result...</summary>
+<a href="https://github.com/coveooss/json-schema-for-humans/blob/main/docs/examples/examples_md_nested_with_trailing_html_badges/Configuration.md" target="_blank">Open it in github</a>
+
+[examples/examples_md_nested_with_trailing_html_badges/Configuration.md](examples/examples_md_nested_with_trailing_html_badges/Configuration.md ':include')
 </details>
 
 

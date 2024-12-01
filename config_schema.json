@@ -29,7 +29,7 @@
       "default": true,
       "description": "If a description is considered big, show only the beginning and add a `Read more` button."
     },
-    "collapse_long_examples" : {
+    "collapse_long_examples": {
       "type": "boolean",
       "default": true,
       "description": "If an example is considered big, collapse it, it can be displayed with a `Show` option."
@@ -130,10 +130,43 @@
           "description": "if true generate badges(eg: optional, required) using embedded image (https://img.shields.io).\n\n if false, use text instead",
           "default": false
         },
+        "allow_html": {
+          "type": "boolean",
+          "description": "for `md_nested` the heading is with an HTML `<details>` which do not allow markdown but it is possible to use HTML instead. Fx. the badges can be renderned a HTML `<img ..>` instead.",
+          "default": false
+        },
         "show_heading_numbers": {
           "type": "boolean",
           "description": "if true generate heading numbers to correspond to table of contents.\n\n if false, do not generate heading numbers",
           "default": true
+        },
+        "heading_leading_badges": {
+          "type": "array",
+          "description": "Badges or bracket names to be included before heading",
+          "default": [
+            "Required",
+            "Property"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "Required",
+              "Property",
+              "Type"
+            ]
+          }
+        },
+        "heading_trailing_badges": {
+          "type": "array",
+          "description": "Badges or bracket names to be included after heading",
+          "default": [],
+          "items": {
+            "type": "string",
+            "enum": [
+              "Required",
+              "Type"
+            ]
+          }
         },
         "show_array_restrictions": {
           "type": "boolean",

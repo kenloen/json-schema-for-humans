@@ -28,6 +28,8 @@ DEFAULT_PROPERTIES_TABLE_COLUMNS = [
     "Title/Description",
 ]
 
+DEFAULT_HEADING_LEADING_BADGES = ["Required", "Property"]
+
 
 @dataclass_json
 @dataclass
@@ -69,7 +71,10 @@ class GenerationConfiguration:
 
         default_template_md_options = {
             "badge_as_image": False,
+            "allow_html": False,
             "show_heading_numbers": True,
+            "heading_leading_badges": DEFAULT_HEADING_LEADING_BADGES,
+            "heading_trailing_badges": [],
             "show_array_restrictions": True,
             "properties_table_columns": DEFAULT_PROPERTIES_TABLE_COLUMNS,
         }

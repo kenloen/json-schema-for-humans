@@ -2,7 +2,7 @@
 
 - [1. ![Optional](https://img.shields.io/badge/Optional-yellow) Property `Person > firstName`](#firstName)
 - [2. ![Optional](https://img.shields.io/badge/Optional-yellow) Property `Person > lastName`](#lastName)
-- [3. ![Optional](https://img.shields.io/badge/Optional-yellow) Pattern Property `Person > paperSize`](#pattern1)
+- [3. ![Optional](https://img.shields.io/badge/Optional-yellow)Pattern Property `Person > paperSize`](#pattern1)
   - [3.1. ![Required](https://img.shields.io/badge/Required-blue) Property `Person > paperSize > rating`](#pattern1_rating)
   - [3.2. ![Required](https://img.shields.io/badge/Required-blue) Property `Person > paperSize > review`](#pattern1_review)
 
@@ -39,7 +39,7 @@
 
 **Description:** The person's last name.
 
-## <a name="pattern1"></a>3. ![Optional](https://img.shields.io/badge/Optional-yellow) Pattern Property `Person > paperSize`
+## <a name="pattern1"></a>3. ![Optional](https://img.shields.io/badge/Optional-yellow)Pattern Property `Person > paperSize`
 > All properties whose name matches the regular expression
 ```$[a-c][0-9]^``` ([Test](https://regex101.com/?regex=%24%5Ba-c%5D%5B0-9%5D%5E))
 must respect the following conditions

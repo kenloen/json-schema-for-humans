@@ -8,11 +8,11 @@
 - [6. Property `JSON Schema for Humans configuration file > collapse_long_examples`](#collapse_long_examples)
 - [7. Property `JSON Schema for Humans configuration file > link_to_reused_ref`](#link_to_reused_ref)
 - [8. Property `JSON Schema for Humans configuration file > recursive_detection_depth`](#recursive_detection_depth)
-- [9. ~~ Property `JSON Schema for Humans configuration file > deprecated_from_description`~~](#deprecated_from_description)
+- [9. ~~ Property `JSON Schema for Humans configuration file > deprecated_from_description` ~~](#deprecated_from_description)
 - [10. Property `JSON Schema for Humans configuration file > default_from_description`](#default_from_description)
 - [11. Property `JSON Schema for Humans configuration file > copy_css`](#copy_css)
 - [12. Property `JSON Schema for Humans configuration file > copy_js`](#copy_js)
-- [13. ~~ Property `JSON Schema for Humans configuration file > templates_directory`~~](#templates_directory)
+- [13. ~~ Property `JSON Schema for Humans configuration file > templates_directory` ~~](#templates_directory)
 - [14. Property `JSON Schema for Humans configuration file > template_name`](#template_name)
 - [15. Property `JSON Schema for Humans configuration file > custom_template_path`](#custom_template_path)
 - [16. Property `JSON Schema for Humans configuration file > show_toc`](#show_toc)
@@ -21,10 +21,15 @@
 - [19. Property `JSON Schema for Humans configuration file > markdown_options`](#markdown_options)
 - [20. Property `JSON Schema for Humans configuration file > template_md_options`](#template_md_options)
   - [20.1. Property `JSON Schema for Humans configuration file > template_md_options > badge_as_image`](#template_md_options_badge_as_image)
-  - [20.2. Property `JSON Schema for Humans configuration file > template_md_options > show_heading_numbers`](#template_md_options_show_heading_numbers)
-  - [20.3. Property `JSON Schema for Humans configuration file > template_md_options > show_array_restrictions`](#template_md_options_show_array_restrictions)
-  - [20.4. Property `JSON Schema for Humans configuration file > template_md_options > properties_table_columns`](#template_md_options_properties_table_columns)
-    - [20.4.1. JSON Schema for Humans configuration file > template_md_options > properties_table_columns > properties_table_columns items](#template_md_options_properties_table_columns_items)
+  - [20.2. Property `JSON Schema for Humans configuration file > template_md_options > allow_html`](#template_md_options_allow_html)
+  - [20.3. Property `JSON Schema for Humans configuration file > template_md_options > show_heading_numbers`](#template_md_options_show_heading_numbers)
+  - [20.4. Property `JSON Schema for Humans configuration file > template_md_options > heading_leading_badges`](#template_md_options_heading_leading_badges)
+    - [20.4.1. JSON Schema for Humans configuration file > template_md_options > heading_leading_badges > heading_leading_badges items](#template_md_options_heading_leading_badges_items)
+  - [20.5. Property `JSON Schema for Humans configuration file > template_md_options > heading_trailing_badges`](#template_md_options_heading_trailing_badges)
+    - [20.5.1. JSON Schema for Humans configuration file > template_md_options > heading_trailing_badges > heading_trailing_badges items](#template_md_options_heading_trailing_badges_items)
+  - [20.6. Property `JSON Schema for Humans configuration file > template_md_options > show_array_restrictions`](#template_md_options_show_array_restrictions)
+  - [20.7. Property `JSON Schema for Humans configuration file > template_md_options > properties_table_columns`](#template_md_options_properties_table_columns)
+    - [20.7.1. JSON Schema for Humans configuration file > template_md_options > properties_table_columns > properties_table_columns items](#template_md_options_properties_table_columns_items)
 - [21. Property `JSON Schema for Humans configuration file > with_footer`](#with_footer)
 - [22. Property `JSON Schema for Humans configuration file > footer_show_time`](#footer_show_time)
 
@@ -156,7 +161,7 @@ This option determines the number of times to recursively follow definitions loo
 
 In other words, if a schema has a deeply nested element that refers to itself, this option may need to be increased.
 
-## <a name="deprecated_from_description"></a>9. ~~ Property `JSON Schema for Humans configuration file > deprecated_from_description`~~
+## <a name="deprecated_from_description"></a>9. ~~ Property `JSON Schema for Humans configuration file > deprecated_from_description` ~~
 
 |                |              |
 | -------------- | ------------ |
@@ -201,7 +206,7 @@ The default value from the "default" attribute will be used in priority.
 
 This file contains the logic for the anchor links.
 
-## <a name="templates_directory"></a>13. ~~ Property `JSON Schema for Humans configuration file > templates_directory`~~
+## <a name="templates_directory"></a>13. ~~ Property `JSON Schema for Humans configuration file > templates_directory` ~~
 
 |                |              |
 | -------------- | ------------ |
@@ -286,12 +291,12 @@ This is the old behaviour and is only needed for browsers that do not support HT
 
 ## <a name="markdown_options"></a>19. Property `JSON Schema for Humans configuration file > markdown_options`
 
-|                           |                                                                                                                         |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Type**                  | `object`                                                                                                                |
-| **Required**              | No                                                                                                                      |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.")                                               |
-| **Default**               | `{"fenced-code-blocks": {"break-on-newline": true, "cssclass": "highlight jumbotron", "tables": null}, "tables": null}` |
+|                           |                                                                                                         |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Type**                  | `object`                                                                                                |
+| **Required**              | No                                                                                                      |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.")                               |
+| **Default**               | `{"fenced-code-blocks": {"cssclass": "highlight jumbotron"}, "tables": null, "break-on-newline": true}` |
 
 **Description:** [Markdown 2 options](https://github.com/trentm/python-markdown2/wiki/Extras) for the descriptions. `description_is_markdown` must be true for this to have any effect.
 
@@ -321,12 +326,15 @@ Adding an extra, even if the value is false, will activate it. For example `{"br
 
 **Description:** specific options to md template
 
-| Property                                                                     | Pattern | Type                      | Deprecated | Definition | Title/Description                                                                                                                                                          |
-| ---------------------------------------------------------------------------- | ------- | ------------------------- | ---------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| - [badge_as_image](#template_md_options_badge_as_image )                     | No      | boolean                   | No         | -          | if true generate badges(eg: optional, required) using embedded image (https://img.shields.io).<br /><br /> if false, use text instead                                      |
-| - [show_heading_numbers](#template_md_options_show_heading_numbers )         | No      | boolean                   | No         | -          | if true generate heading numbers to correspond to table of contents.<br /><br /> if false, do not generate heading numbers                                                 |
-| - [show_array_restrictions](#template_md_options_show_array_restrictions )   | No      | boolean                   | No         | -          | if true generate array restrictions section.<br /><br /> if false, do not generate                                                                                         |
-| - [properties_table_columns](#template_md_options_properties_table_columns ) | No      | array of enum (of string) | No         | -          | array of column names to display in the properties table.<br /><br /> if empty, the default is ['Property','Pattern','Type','Deprecated','Definition','Title/Description'] |
+| Property                                                                     | Pattern | Type                      | Deprecated | Definition | Title/Description                                                                                                                                                                            |
+| ---------------------------------------------------------------------------- | ------- | ------------------------- | ---------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| - [badge_as_image](#template_md_options_badge_as_image )                     | No      | boolean                   | No         | -          | if true generate badges(eg: optional, required) using embedded image (https://img.shields.io).<br /><br /> if false, use text instead                                                        |
+| - [allow_html](#template_md_options_allow_html )                             | No      | boolean                   | No         | -          | for \`md_nested\` the heading is with an HTML \`<details>\` which do not allow markdown but it is possible to use HTML instead. Fx. the badges can be renderned a HTML \`<img ..>\` instead. |
+| - [show_heading_numbers](#template_md_options_show_heading_numbers )         | No      | boolean                   | No         | -          | if true generate heading numbers to correspond to table of contents.<br /><br /> if false, do not generate heading numbers                                                                   |
+| - [heading_leading_badges](#template_md_options_heading_leading_badges )     | No      | array of enum (of string) | No         | -          | Badges or bracket names to be included before heading                                                                                                                                        |
+| - [heading_trailing_badges](#template_md_options_heading_trailing_badges )   | No      | array of enum (of string) | No         | -          | Badges or bracket names to be included after heading                                                                                                                                         |
+| - [show_array_restrictions](#template_md_options_show_array_restrictions )   | No      | boolean                   | No         | -          | if true generate array restrictions section.<br /><br /> if false, do not generate                                                                                                           |
+| - [properties_table_columns](#template_md_options_properties_table_columns ) | No      | array of enum (of string) | No         | -          | array of column names to display in the properties table.<br /><br /> if empty, the default is ['Property','Pattern','Type','Deprecated','Definition','Title/Description']                   |
 
 ### <a name="template_md_options_badge_as_image"></a>20.1. Property `JSON Schema for Humans configuration file > template_md_options > badge_as_image`
 
@@ -340,7 +348,17 @@ Adding an extra, even if the value is false, will activate it. For example `{"br
 
  if false, use text instead
 
-### <a name="template_md_options_show_heading_numbers"></a>20.2. Property `JSON Schema for Humans configuration file > template_md_options > show_heading_numbers`
+### <a name="template_md_options_allow_html"></a>20.2. Property `JSON Schema for Humans configuration file > template_md_options > allow_html`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | No        |
+| **Default**  | `false`   |
+
+**Description:** for `md_nested` the heading is with an HTML `<details>` which do not allow markdown but it is possible to use HTML instead. Fx. the badges can be renderned a HTML `<img ..>` instead.
+
+### <a name="template_md_options_show_heading_numbers"></a>20.3. Property `JSON Schema for Humans configuration file > template_md_options > show_heading_numbers`
 
 |              |           |
 | ------------ | --------- |
@@ -352,7 +370,74 @@ Adding an extra, even if the value is false, will activate it. For example `{"br
 
  if false, do not generate heading numbers
 
-### <a name="template_md_options_show_array_restrictions"></a>20.3. Property `JSON Schema for Humans configuration file > template_md_options > show_array_restrictions`
+### <a name="template_md_options_heading_leading_badges"></a>20.4. Property `JSON Schema for Humans configuration file > template_md_options > heading_leading_badges`
+
+|              |                             |
+| ------------ | --------------------------- |
+| **Type**     | `array of enum (of string)` |
+| **Required** | No                          |
+| **Default**  | `["Required", "Property"]`  |
+
+**Description:** Badges or bracket names to be included before heading
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                   | Description |
+| --------------------------------------------------------------------------------- | ----------- |
+| [heading_leading_badges items](#template_md_options_heading_leading_badges_items) | -           |
+
+#### <a name="template_md_options_heading_leading_badges_items"></a>20.4.1. JSON Schema for Humans configuration file > template_md_options > heading_leading_badges > heading_leading_badges items
+
+|              |                    |
+| ------------ | ------------------ |
+| **Type**     | `enum (of string)` |
+| **Required** | No                 |
+
+Must be one of:
+* "Required"
+* "Property"
+* "Type"
+
+### <a name="template_md_options_heading_trailing_badges"></a>20.5. Property `JSON Schema for Humans configuration file > template_md_options > heading_trailing_badges`
+
+|              |                             |
+| ------------ | --------------------------- |
+| **Type**     | `array of enum (of string)` |
+| **Required** | No                          |
+| **Default**  | `[]`                        |
+
+**Description:** Badges or bracket names to be included after heading
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                     | Description |
+| ----------------------------------------------------------------------------------- | ----------- |
+| [heading_trailing_badges items](#template_md_options_heading_trailing_badges_items) | -           |
+
+#### <a name="template_md_options_heading_trailing_badges_items"></a>20.5.1. JSON Schema for Humans configuration file > template_md_options > heading_trailing_badges > heading_trailing_badges items
+
+|              |                    |
+| ------------ | ------------------ |
+| **Type**     | `enum (of string)` |
+| **Required** | No                 |
+
+Must be one of:
+* "Required"
+* "Type"
+
+### <a name="template_md_options_show_array_restrictions"></a>20.6. Property `JSON Schema for Humans configuration file > template_md_options > show_array_restrictions`
 
 |              |           |
 | ------------ | --------- |
@@ -364,7 +449,7 @@ Adding an extra, even if the value is false, will activate it. For example `{"br
 
  if false, do not generate
 
-### <a name="template_md_options_properties_table_columns"></a>20.4. Property `JSON Schema for Humans configuration file > template_md_options > properties_table_columns`
+### <a name="template_md_options_properties_table_columns"></a>20.7. Property `JSON Schema for Humans configuration file > template_md_options > properties_table_columns`
 
 |              |                             |
 | ------------ | --------------------------- |
@@ -387,7 +472,7 @@ Adding an extra, even if the value is false, will activate it. For example `{"br
 | ------------------------------------------------------------------------------------- | ----------- |
 | [properties_table_columns items](#template_md_options_properties_table_columns_items) | -           |
 
-#### <a name="template_md_options_properties_table_columns_items"></a>20.4.1. JSON Schema for Humans configuration file > template_md_options > properties_table_columns > properties_table_columns items
+#### <a name="template_md_options_properties_table_columns_items"></a>20.7.1. JSON Schema for Humans configuration file > template_md_options > properties_table_columns > properties_table_columns items
 
 |              |                    |
 | ------------ | ------------------ |

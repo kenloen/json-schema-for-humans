@@ -174,6 +174,20 @@ def array_items_restrictions(schema: SchemaNode) -> List[List[str]]:
     return items_restrictions
 
 
+def combine_hex_values(color_weight_dict: dict):
+    """
+    Combines HEX colors base on weights for each
+    Found here: https://stackoverflow.com/a/61488997
+    """
+    d_items = sorted(color_weight_dict.items())
+    tot_weight = sum(color_weight_dict.values())
+    red = int(sum([int(k[:2], 16) * v for k, v in d_items]) / tot_weight)
+    green = int(sum([int(k[2:4], 16) * v for k, v in d_items]) / tot_weight)
+    blue = int(sum([int(k[4:6], 16) * v for k, v in d_items]) / tot_weight)
+    zpad = lambda x: x if len(x) == 2 else "0" + x
+    return zpad(hex(red)[2:]) + zpad(hex(green)[2:]) + zpad(hex(blue)[2:])
+
+
 class MarkdownTemplate(object):
     def __init__(self, config):
         self.headings = {}
@@ -285,6 +299,18 @@ class MarkdownTemplate(object):
         """Format a Markdown link"""
         return f"[{title}](#{link} {tooltip})"
 
+    @staticmethod
+    def json_base_data_type_hex_colors():
+        return {
+            "string": "4c72b0",  # Blue
+            "number": "dd8452",  # Orange
+            "integer": "55a868",  # Green
+            "object": "c44e52",  # Red
+            "array": "8172b3",  # Purple
+            "boolean": "da8bc3",  # Pink
+            "null": "ccb974",  # Yellow
+        }
+
     def badge(self, name: str, color: str, value: str = "", show_text: bool = False, fallback: bool = True) -> str:
         """
         Badge as markdown image link if badge_as_image option set otherwise Badge as text.
@@ -292,6 +318,7 @@ class MarkdownTemplate(object):
         If fallback is False, nothing will be returned if badge_as_image is false.
         """
         show_image = self.config.template_md_options.get("badge_as_image")
+        allow_html = self.config.template_md_options.get("allow_html")
         if not show_image and not fallback:
             return ""
 
@@ -300,12 +327,20 @@ class MarkdownTemplate(object):
         else:
             text_badge = name
 
-        if show_image and not show_text:
+        if show_image and (not show_text or allow_html):
             value_str = ""
             if value:
                 value_str = "-" + quote(value)
             name = quote(name)
-            color = quote(color)
+            if color is None and name == "type":
+                type_colors = self.json_base_data_type_hex_colors()
+                type_names = [name for name in type_colors.keys() if name in value]
+                n_types = len(type_names)
+                color = combine_hex_values({type_colors[name]: 1 / n_types for name in type_names})
+            else:
+                color = quote(color)
+            if show_text:
+                return f'<img alt="{name} Badge" src="https://img.shields.io/badge/{name}{value_str}-{color}">'
             return f"![{text_badge}](https://img.shields.io/badge/{name}{value_str}-{color})"
         else:
             return f"[{text_badge}]"

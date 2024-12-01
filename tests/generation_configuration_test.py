@@ -65,7 +65,10 @@ def test_override_template_md_options() -> None:
     assert config.template_md_options == {
         "new_property": True,
         "badge_as_image": False,
+        "allow_html": False,
         "show_heading_numbers": True,
+        "heading_leading_badges": ["Required", "Property"],
+        "heading_trailing_badges": [],
         "show_array_restrictions": True,
         "properties_table_columns": [
             "Property",

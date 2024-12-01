@@ -771,7 +771,7 @@ If <code>link_to_reused_ref</code> is false and a <code>$ref</code> in the schem
                 d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
             />
         </svg>
-    <a href="#markdown_options">markdown_options</a></div><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {"fenced-code-blocks": {"break-on-newline": true, "cssclass": "highlight jumbotron", "tables": null}, "tables": null}</span><br/>
+    <a href="#markdown_options">markdown_options</a></div><span class="badge badge-dark value-type">Type: object</span> <span class="badge badge-success default-value">Default: {"fenced-code-blocks": {"cssclass": "highlight jumbotron"}, "tables": null, "break-on-newline": true}</span><br/>
 
 
 
@@ -892,6 +892,51 @@ Adding an extra, even if the value is false, will activate it. For example <code
 </div>
 
 <div class="card">
+    <div class="card-header" id="template_md_options_allow_html">
+        <h2 class="mb-0">
+            <a href="#template_md_options_allow_html"><span class="property-name">allow_html</span></a></h2>
+    </div>
+
+    <div class="card-body property-definition-div">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options">template_md_options</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options_allow_html">allow_html</a></div><span class="badge badge-dark value-type">Type: boolean</span> <span class="badge badge-success default-value">Default: false</span><br/>
+
+
+
+
+
+
+
+<p>for <code>md_nested</code> the heading is with an HTML <code>&amp;lt;details&amp;gt;</code> which do not allow markdown but it is possible to use HTML instead. Fx. the badges can be renderned a HTML <code>&amp;lt;img ..&amp;gt;</code> instead.</p>
+
+
+
+
+
+        
+
+        
+        
+
+        
+    </div>
+</div>
+
+<div class="card">
     <div class="card-header" id="template_md_options_show_heading_numbers">
         <h2 class="mb-0">
             <a href="#template_md_options_show_heading_numbers"><span class="property-name">show_heading_numbers</span></a></h2>
@@ -935,6 +980,194 @@ Adding an extra, even if the value is false, will activate it. For example <code
         
 
         
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header" id="template_md_options_heading_leading_badges">
+        <h2 class="mb-0">
+            <a href="#template_md_options_heading_leading_badges"><span class="property-name">heading_leading_badges</span></a></h2>
+    </div>
+
+    <div class="card-body property-definition-div">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options">template_md_options</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options_heading_leading_badges">heading_leading_badges</a></div><span class="badge badge-dark value-type">Type: array of enum (of string)</span> <span class="badge badge-success default-value">Default: ["Required", "Property"]</span><br/>
+
+
+
+
+
+
+
+<p>Badges or bracket names to be included before heading</p>
+
+
+
+
+
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="template_md_options_heading_leading_badges_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options">template_md_options</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options_heading_leading_badges">heading_leading_badges</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options_heading_leading_badges_items">heading_leading_badges items</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+
+
+
+
+
+
+
+
+
+
+
+<div class="enum-value" id="template_md_options_heading_leading_badges_items_enum">
+                <h4>Must be one of:</h4>
+                <ul class="list-group"><li class="list-group-item enum-item">"Required"</li><li class="list-group-item enum-item">"Property"</li><li class="list-group-item enum-item">"Type"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header" id="template_md_options_heading_trailing_badges">
+        <h2 class="mb-0">
+            <a href="#template_md_options_heading_trailing_badges"><span class="property-name">heading_trailing_badges</span></a></h2>
+    </div>
+
+    <div class="card-body property-definition-div">
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options">template_md_options</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options_heading_trailing_badges">heading_trailing_badges</a></div><span class="badge badge-dark value-type">Type: array of enum (of string)</span> <span class="badge badge-success default-value">Default: []</span><br/>
+
+
+
+
+
+
+
+<p>Badges or bracket names to be included after heading</p>
+
+
+
+
+
+        
+
+        
+        
+
+         <span class="badge badge-info no-additional">No Additional Items</span><h4>Each item of this array must be:</h4>
+    <div class="card">
+        <div class="card-body items-definition" id="template_md_options_heading_trailing_badges_items">
+            
+
+    <div class="breadcrumbs">root
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options">template_md_options</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options_heading_trailing_badges">heading_trailing_badges</a>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+            />
+        </svg>
+    <a href="#template_md_options_heading_trailing_badges_items">heading_trailing_badges items</a></div><span class="badge badge-dark value-type">Type: enum (of string)</span><br/>
+
+
+
+
+
+
+
+
+
+
+
+<div class="enum-value" id="template_md_options_heading_trailing_badges_items_enum">
+                <h4>Must be one of:</h4>
+                <ul class="list-group"><li class="list-group-item enum-item">"Required"</li><li class="list-group-item enum-item">"Type"</li></ul>
+            </div>
+        
+
+        
+        
+
+        
+        </div>
+    </div>
     </div>
 </div>
 
