@@ -152,6 +152,7 @@ CONFIGURATIONS: List[ExampleConfiguration] = [
             deprecated_from_description=True,
             template_md_options={
                 "badge_as_image": True,
+                "allow_html": True,
                 "heading_leading_badges": [],
                 "heading_trailing_badges": ["Required", "Type"],
             },

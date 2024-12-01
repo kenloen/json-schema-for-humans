@@ -1,9 +1,9 @@
 # Schema Docs
 
-- [1. ~~<code> root > deprecated1 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated1)
-- [2. ~~<code> root > deprecated2 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated2)
-- [3. ~~<code> root > deprecated3 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated3)
-- [4. ~~<code> root > deprecated4 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated4)
+- [1. <s><code> root > deprecated1 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated1)
+- [2. <s><code> root > deprecated2 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated2)
+- [3. <s><code> root > deprecated3 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated3)
+- [4. <s><code> root > deprecated4 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52">](#deprecated4)
 - [5. <code> root > not_deprecated </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-string-4c72b0">](#not_deprecated)
 
 |                           |                                                                                                                                   |
@@ -15,7 +15,7 @@
 
 <details>
 <summary>
-<strong> <a name="deprecated1"></a>1. ~~<code> root > deprecated1 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
+<strong> <a name="deprecated1"></a>1. <s><code> root > deprecated1 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
 
 </summary>
 <blockquote>
@@ -33,7 +33,7 @@
 
 <details>
 <summary>
-<strong> <a name="deprecated2"></a>2. ~~<code> root > deprecated2 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
+<strong> <a name="deprecated2"></a>2. <s><code> root > deprecated2 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
 
 </summary>
 <blockquote>
@@ -51,7 +51,7 @@
 
 <details>
 <summary>
-<strong> <a name="deprecated3"></a>3. ~~<code> root > deprecated3 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
+<strong> <a name="deprecated3"></a>3. <s><code> root > deprecated3 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
 
 </summary>
 <blockquote>
@@ -69,7 +69,7 @@
 
 <details>
 <summary>
-<strong> <a name="deprecated4"></a>4. ~~<code> root > deprecated4 </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
+<strong> <a name="deprecated4"></a>4. <s><code> root > deprecated4 </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-object-c44e52"></strong>  
 
 </summary>
 <blockquote>

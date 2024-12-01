@@ -8,11 +8,11 @@
 - [6. `JSON Schema for Humans configuration file > collapse_long_examples` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#collapse_long_examples)
 - [7. `JSON Schema for Humans configuration file > link_to_reused_ref` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#link_to_reused_ref)
 - [8. `JSON Schema for Humans configuration file > recursive_detection_depth` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: integer](https://img.shields.io/badge/type-integer-55a868)](#recursive_detection_depth)
-- [9. ~~ `JSON Schema for Humans configuration file > deprecated_from_description` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#deprecated_from_description)
+- [9. <s> `JSON Schema for Humans configuration file > deprecated_from_description` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#deprecated_from_description)
 - [10. `JSON Schema for Humans configuration file > default_from_description` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#default_from_description)
 - [11. `JSON Schema for Humans configuration file > copy_css` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#copy_css)
 - [12. `JSON Schema for Humans configuration file > copy_js` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#copy_js)
-- [13. ~~ `JSON Schema for Humans configuration file > templates_directory` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: string](https://img.shields.io/badge/type-string-4c72b0)](#templates_directory)
+- [13. <s> `JSON Schema for Humans configuration file > templates_directory` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: string](https://img.shields.io/badge/type-string-4c72b0)](#templates_directory)
 - [14. `JSON Schema for Humans configuration file > template_name` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: enum (of string)](https://img.shields.io/badge/type-enum%20%28of%20string%29-4c72b0)](#template_name)
 - [15. `JSON Schema for Humans configuration file > custom_template_path` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: string](https://img.shields.io/badge/type-string-4c72b0)](#custom_template_path)
 - [16. `JSON Schema for Humans configuration file > show_toc` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)](#show_toc)
@@ -152,7 +152,7 @@ This option determines the number of times to recursively follow definitions loo
 
 In other words, if a schema has a deeply nested element that refers to itself, this option may need to be increased.
 
-## <a name="deprecated_from_description"></a>9. ~~ `JSON Schema for Humans configuration file > deprecated_from_description` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)
+## <a name="deprecated_from_description"></a>9. <s> `JSON Schema for Humans configuration file > deprecated_from_description` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: boolean](https://img.shields.io/badge/type-boolean-da8bc3)
 
 |                |                                                            |
 | -------------- | ---------------------------------------------------------- |
@@ -193,7 +193,7 @@ The default value from the "default" attribute will be used in priority.
 
 This file contains the logic for the anchor links.
 
-## <a name="templates_directory"></a>13. ~~ `JSON Schema for Humans configuration file > templates_directory` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: string](https://img.shields.io/badge/type-string-4c72b0)
+## <a name="templates_directory"></a>13. <s> `JSON Schema for Humans configuration file > templates_directory` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: string](https://img.shields.io/badge/type-string-4c72b0)
 
 |                |                                                            |
 | -------------- | ---------------------------------------------------------- |

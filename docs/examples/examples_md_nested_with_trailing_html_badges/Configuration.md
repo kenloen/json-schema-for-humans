@@ -8,11 +8,11 @@
 - [6. <code> JSON Schema for Humans configuration file > collapse_long_examples </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#collapse_long_examples)
 - [7. <code> JSON Schema for Humans configuration file > link_to_reused_ref </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#link_to_reused_ref)
 - [8. <code> JSON Schema for Humans configuration file > recursive_detection_depth </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-integer-55a868">](#recursive_detection_depth)
-- [9. ~~<code> JSON Schema for Humans configuration file > deprecated_from_description </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#deprecated_from_description)
+- [9. <s><code> JSON Schema for Humans configuration file > deprecated_from_description </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#deprecated_from_description)
 - [10. <code> JSON Schema for Humans configuration file > default_from_description </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#default_from_description)
 - [11. <code> JSON Schema for Humans configuration file > copy_css </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#copy_css)
 - [12. <code> JSON Schema for Humans configuration file > copy_js </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#copy_js)
-- [13. ~~<code> JSON Schema for Humans configuration file > templates_directory </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-string-4c72b0">](#templates_directory)
+- [13. <s><code> JSON Schema for Humans configuration file > templates_directory </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-string-4c72b0">](#templates_directory)
 - [14. <code> JSON Schema for Humans configuration file > template_name </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-enum%20%28of%20string%29-4c72b0">](#template_name)
 - [15. <code> JSON Schema for Humans configuration file > custom_template_path </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-string-4c72b0">](#custom_template_path)
 - [16. <code> JSON Schema for Humans configuration file > show_toc </code><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3">](#show_toc)
@@ -193,7 +193,7 @@ In other words, if a schema has a deeply nested element that refers to itself, t
 
 <details>
 <summary>
-<strong> <a name="deprecated_from_description"></a>9. ~~<code> JSON Schema for Humans configuration file > deprecated_from_description </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3"></strong>  
+<strong> <a name="deprecated_from_description"></a>9. <s><code> JSON Schema for Humans configuration file > deprecated_from_description </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-boolean-da8bc3"></strong>  
 
 </summary>
 <blockquote>
@@ -266,7 +266,7 @@ This file contains the logic for the anchor links.
 
 <details>
 <summary>
-<strong> <a name="templates_directory"></a>13. ~~<code> JSON Schema for Humans configuration file > templates_directory </code>~~<img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-string-4c72b0"></strong>  
+<strong> <a name="templates_directory"></a>13. <s><code> JSON Schema for Humans configuration file > templates_directory </code></s><img alt="Optional Badge" src="https://img.shields.io/badge/Optional-yellow"><img alt="type Badge" src="https://img.shields.io/badge/type-string-4c72b0"></strong>  
 
 </summary>
 <blockquote>

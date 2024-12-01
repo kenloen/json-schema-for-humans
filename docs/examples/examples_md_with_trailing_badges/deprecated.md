@@ -1,9 +1,9 @@
 # Schema Docs
 
-- [1. ~~ `root > deprecated1` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated1)
-- [2. ~~ `root > deprecated2` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated2)
-- [3. ~~ `root > deprecated3` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated3)
-- [4. ~~ `root > deprecated4` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated4)
+- [1. <s> `root > deprecated1` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated1)
+- [2. <s> `root > deprecated2` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated2)
+- [3. <s> `root > deprecated3` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated3)
+- [4. <s> `root > deprecated4` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)](#deprecated4)
 - [5. `root > not_deprecated` ![Optional](https://img.shields.io/badge/Optional-yellow)![type: string](https://img.shields.io/badge/type-string-4c72b0)](#not_deprecated)
 
 |                           |                                                                                                                                   |
@@ -21,7 +21,7 @@
 | - [deprecated4](#deprecated4 )       | No      | object | ![Deprecated](https://img.shields.io/badge/Deprecated-red) | -          | This is [Deprecated - Use \`not_deprecated\` instead] |
 | - [not_deprecated](#not_deprecated ) | No      | string | No                                                         | -          | -                                                     |
 
-## <a name="deprecated1"></a>1. ~~ `root > deprecated1` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
+## <a name="deprecated1"></a>1. <s> `root > deprecated1` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
 
 |                           |                                                                                                                                   |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,7 +31,7 @@
 
 **Description:** [Deprecated]
 
-## <a name="deprecated2"></a>2. ~~ `root > deprecated2` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
+## <a name="deprecated2"></a>2. <s> `root > deprecated2` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
 
 |                           |                                                                                                                                   |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@
 
 **Description:** [Deprecated - Use `not_deprecated` instead]
 
-## <a name="deprecated3"></a>3. ~~ `root > deprecated3` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
+## <a name="deprecated3"></a>3. <s> `root > deprecated3` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
 
 |                           |                                                                                                                                   |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,7 @@
 
 **Description:** This is [Deprecated]
 
-## <a name="deprecated4"></a>4. ~~ `root > deprecated4` ~~![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
+## <a name="deprecated4"></a>4. <s> `root > deprecated4` </s>![Optional](https://img.shields.io/badge/Optional-yellow)![type: object](https://img.shields.io/badge/type-object-c44e52)
 
 |                           |                                                                                                                                   |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |

@@ -15,12 +15,24 @@
     {%- if 'Type' in config.template_md_options.heading_leading_badges -%}
         {{ md_badge("type", None, sub_property.type_name, fallback=False)}}
     {%- endif -%}
-    {%- if sub_property is deprecated  -%}~~{%- endif -%}
+    {%- if sub_property is deprecated  -%}
+    {%- if config.template_md_options.allow_html -%}
+    <s>
+    {%- else -%}
+    ~~
+    {%- endif -%}
+    {%- endif -%}
     {%- if 'Property' in config.template_md_options.heading_leading_badges -%}
         {%- if sub_property.is_pattern_property %}Pattern{% endif %} Property
     {%- endif -%}
     {% with schema=sub_property %} `{% include "breadcrumbs.md" %}` {% endwith %}
-    {% if sub_property is deprecated -%}~~{%- endif -%}
+    {%- if sub_property is deprecated  -%}
+    {%- if config.template_md_options.allow_html -%}
+    </s>
+    {%- else -%}
+    ~~
+    {%- endif -%}
+    {%- endif -%}
     {%- if 'Required' in config.template_md_options.heading_trailing_badges and not skip_required and sub_property.property_name -%}
         {{ md_badge("Required", "blue", fallback=False) if sub_property.is_required_property else md_badge("Optional", "yellow", fallback=False) }}
     {%- endif -%}
